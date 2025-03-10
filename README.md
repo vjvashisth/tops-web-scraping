@@ -63,3 +63,9 @@ cat tops_products.jsonl | head -n 10
 This will display the first 10 products in the dataset.
 
 ## 6. Challenges Faced & Solutions
+### 1. CAPTCHA / Anti-Scraping Measures
+**Problem:** Some pages block automated requests.
+**Solution:**
+- Used custom user-agents to mimic real users.
+- Added JavaScript scrolling instead of Selenium send_keys().
+- Implemented randomized waits instead of fixed delays.
